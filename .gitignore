@@ -1,0 +1,29 @@
+# Ignore environment variable files
+.env
+
+# Ignore compiled bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore __pycache__ directories inside migrations
+migrations/__pycache__/
+
+# Include alembic data
+migrations/alembic.ini
+migrations/env.py
+migrations/README
+migrations/script.py.mako
+migrations/versions/
