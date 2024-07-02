@@ -21,9 +21,8 @@ Thumbs.db
 # Ignore __pycache__ directories inside migrations
 migrations/__pycache__/
 
-# Include alembic data
-migrations/alembic.ini
-migrations/env.py
-migrations/README
-migrations/script.py.mako
-migrations/versions/
+!migrations/alembic.ini
+!migrations/env.py
+!migrations/README
+!migrations/script.py.mako
+!migrations/versions/
