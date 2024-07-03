@@ -66,6 +66,11 @@ def before_request():
 def create_tables():
     db.create_all()
 
+@app.route('/')
+def index():
+    return "Welcome nerds to my domain"
+
+
 @app.route('/user', methods=['POST'])
 def create_user():
     data = request.get_json()
@@ -100,4 +105,4 @@ def get_user(profileID):
         return jsonify({"message": "User not found"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, ssl_context=('cert.pem', 'key.pem'))

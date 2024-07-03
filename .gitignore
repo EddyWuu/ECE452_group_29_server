@@ -18,6 +18,12 @@ Thumbs.db
 .idea/
 *.swp
 
+# Sensitive Info
+key.pem
+cert.pem
+cert.csr
+openssl.cnf
+
 # Ignore __pycache__ directories inside migrations
 migrations/__pycache__/
 
